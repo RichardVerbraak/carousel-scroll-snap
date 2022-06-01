@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.carousel {
+	display: flex;
+	justify-content: space-between;
+	width: 5000px;
+	overflow: auto;
+
+	scroll-snap-type: x mandatory;
+	scroll-padding: 0 24px;
+
+	list-style: none;
+}
+
+.item {
+	flex-shrink: 0;
+	scroll-snap-align: start;
+}
+
+.dots {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+
+.dot {
+	all: unset;
+	margin-right: 5px;
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+	background: gray;
+	margin-top: 10px;
+}
+
+.dot:focus {
+	outline: 1px solid blue;
+}
